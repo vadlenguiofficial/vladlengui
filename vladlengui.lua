@@ -1,9 +1,10 @@
 sgui = Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui)
+sgui.Name = "vladlengui"
 sgui.ResetOnSpawn = false
 frame = Instance.new("Frame", sgui)
 frame.Size = UDim2.fromScale(0.19,0.67)
 frame.BackgroundColor3 = Color3.new(255,255,255)
-frame.Position = UDim2.fromScale(0.04,0.17)
+frame.Position = UDim2.fromScale(0.022,0.29)
 uill = Instance.new("UIListLayout", frame)
 gavno = Instance.new("TextButton")
 gavno.TextScaled = true
