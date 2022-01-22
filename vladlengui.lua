@@ -27,13 +27,7 @@ gavno5 = gavno:Clone()
 gavno5.Parent = frame
 gavno5.Text = "razgon up"
 
-bebra1 = false
-bebra2 = false
-bebra3 = false
-bebra4 = false
-bebra5 = false
-
-function gavnoclick1()
+gavno1.MouseButton1Click:Connect(function()
 	if not bebra1 then
 		gavno1.BackgroundColor3 = Color3.new(0, 255, 0)
 		bebra1 = true
@@ -49,9 +43,9 @@ function gavnoclick1()
 		gavno1.BackgroundColor3 = Color3.new(255, 0, 0)
 		bebra1 = false
 	end
-end
+end)
 
-function gavnoclick2()
+gavno2.MouseButton1Click:Connect(function()
 	if not bebra2 then
 		gavno2.BackgroundColor3 = Color3.new(0, 255, 0)
 		bebra2 = true
@@ -67,9 +61,9 @@ function gavnoclick2()
 		gavno2.BackgroundColor3 = Color3.new(255, 0, 0)
 		bebra2 = false
 	end
-end
+end)
 
-function gavnoclick3()
+gavno3.MouseButton1Click:Connect(function()
 	if not bebra3 then
 		gavno3.BackgroundColor3 = Color3.new(0, 255, 0)
 		bebra3 = true
@@ -85,9 +79,9 @@ function gavnoclick3()
 		gavno3.BackgroundColor3 = Color3.new(255, 0, 0)
 		bebra3 = false
 	end
-end
+end)
 
-function gavnoclick4()
+gavno4.MouseButton1Click:Connect(function()
 	if not bebra4 then
 		gavno4.BackgroundColor3 = Color3.new(0, 255, 0)
 		bebra4 = true
@@ -103,9 +97,9 @@ function gavnoclick4()
 		gavno4.BackgroundColor3 = Color3.new(255, 0, 0)
 		bebra4 = false
 	end
-end
+end)
 
-function gavnoclick5()
+gavno5.MouseButton1Click:Connect(function()
 	if not bebra5 then
 		gavno5.BackgroundColor3 = Color3.new(0, 255, 0)
 		bebra5 = true
@@ -121,10 +115,10 @@ function gavnoclick5()
 		gavno5.BackgroundColor3 = Color3.new(255, 0, 0)
 		bebra5 = false
 	end
-end
+end)
 
-gavno1.MouseButton1Click:Connect(gavnoclick1)
-gavno2.MouseButton1Click:Connect(gavnoclick2)
-gavno3.MouseButton1Click:Connect(gavnoclick3)
-gavno4.MouseButton1Click:Connect(gavnoclick4)
-gavno5.MouseButton1Click:Connect(gavnoclick5)
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+	if msg == "vgo" then
+		game.Players.LocalPlayer.PlayerGui.vladlengui:Destroy()
+	end
+end)
